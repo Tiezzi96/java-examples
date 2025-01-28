@@ -1,11 +1,11 @@
 package java.helloworld;
 
 public class HelloWorld {
+	
+	private static HelloMessage helloMessage;
 
-	private static String hello() {
-		return "Hello Wolrd!";
-	}
 	public static void main(String[] args) {
-		System.out.println(hello());
+		helloMessage = new HelloMessage("Hello World!");
+		System.out.println(helloMessage.getMessage());
 	}
 }
